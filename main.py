@@ -5,7 +5,7 @@ def new_file():
     text_area.delete(1.0,END)
 
 def save_file():
-    f = asksaveasfile(mode = "w", defaultextension=".txt",filetypes=[('Text files', '.txt')])
+    f = asksaveasfile(mode = "w", defaultextension=".txt", filetypes=[('Text files', '.txt')])
     text_save = str(text_area.get(1.0, END))
     f.write(text_save)
     f.close()
